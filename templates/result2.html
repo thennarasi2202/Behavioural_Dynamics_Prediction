@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 2 Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        .not-addicted {
+            color: green;
+            font-weight: bold;
+        }
+        .addicted {
+            color: red;
+            font-weight: bold;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Impulsive Buying Behavior Prediction</h1>
+
+        {% if prediction is not none %}
+            {% if prediction == 0 %}
+                <p class="not-addicted"><strong>Prediction:</strong> Not Addicted</p>
+                <p><strong>Suggestions:</strong></p>
+                <ul>
+                    <li>Maintain your healthy shopping habits.</li>
+                    <li>Continue making mindful purchasing decisions.</li>
+                    <li>Set financial goals to stay on track.</li>
+                </ul>
+            {% elif prediction == 1 %}
+                <p class="addicted"><strong>Prediction:</strong> Addicted</p>
+                <p><strong>Suggestions:</strong></p>
+                <ul>
+                    <li>Identify triggers that lead to impulsive purchases.</li>
+                    <li>Set a budget and track your spending.</li>
+                    <li>Unsubscribe from marketing emails and notifications.</li>
+                    <li>Delay purchases by waiting 24 hours before buying.</li>
+                </ul>
+            {% endif %}
+        {% else %}
+            <p>No prediction available.</p>
+        {% endif %}
+
+        <a href="/model2">Go Back</a>
+    </div>
+</body>
+</html>

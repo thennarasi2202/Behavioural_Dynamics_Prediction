@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 1 Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .suggestions {
+            text-align: left;
+            margin-top: 15px;
+        }
+        .suggestions ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .low { color: green; }
+        .moderate { color: orange; }
+        .high { color: red; }
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Social Media Behavior Prediction</h1>
+        
+        {% if prediction is not none %}
+            {% if prediction == 0 %}
+                <p class="low"><strong>Prediction:</strong> Low Addiction</p>
+                <div class="suggestions">
+                    <p><strong>Suggestions:</strong></p>
+                    <ul>
+                        <li>Maintain a balanced social media usage.</li>
+                        <li>Engage in productive offline activities.</li>
+                        <li>Continue practicing good screen time habits.</li>
+                    </ul>
+                </div>
+            {% elif prediction == 1 %}
+                <p class="moderate"><strong>Prediction:</strong> Moderate Addiction</p>
+                <div class="suggestions">
+                    <p><strong>Suggestions:</strong></p>
+                    <ul>
+                        <li>Set time limits for social media use.</li>
+                        <li>Engage in outdoor activities or hobbies.</li>
+                        <li>Avoid excessive scrolling before bedtime.</li>
+                    </ul>
+                </div>
+            {% elif prediction == 2 %}
+                <p class="high"><strong>Prediction:</strong> High Addiction</p>
+                <div class="suggestions">
+                    <p><strong>Suggestions:</strong></p>
+                    <ul>
+                        <li>Consider a digital detox or social media break.</li>
+                        <li>Use app blockers to control screen time.</li>
+                        <li>Prioritize real-life interactions over online engagement.</li>
+                    </ul>
+                </div>
+            {% else %}
+                <p><strong>Prediction:</strong> Unknown</p>
+            {% endif %}
+        {% else %}
+            <p>No prediction available.</p>
+        {% endif %}
+
+        <a href="/model1" class="back-link">Go Back</a>
+    </div>
+
+</body>
+</html>
+
+
+

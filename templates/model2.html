@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impulse Buying Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h2 class="text-center">Impulse Buying Prediction</h2>
+    <form action="/model2" method="POST" class="mt-4">
+        <div class="mb-3">
+            <p>What is your age?</p>
+            <label>
+                <input type="radio" name="age" value="Less than 18" required> Less than 18
+            </label><br>
+            <label>
+                <input type="radio" name="age" value="18-24" required> 18-24
+            </label><br>
+            <label>
+                <input type="radio" name="age" value="25-34" required> 25-34
+            </label><br>
+            <label>
+                <input type="radio" name="age" value="35-44" required> 35-44
+            </label><br>
+            <label>
+                <input type="radio" name="age" value="45-54" required> 45-54
+            </label><br>
+            <label>
+                <input type="radio" name="age" value="55+" required> 55+
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>What is your employment status?</p>
+            <label>
+                <input type="radio" name="employment_status" value="Student" required> Student
+            </label><br>
+            <label>
+                <input type="radio" name="employment_status" value="Unemployed" required> Unemployed
+            </label><br>
+            <label>
+                <input type="radio" name="employment_status" value="Self-employed" required> Self-employed
+            </label><br>
+            <label>
+                <input type="radio" name="employment_status" value="Employed" required> Employed
+            </label><br>
+            <label>
+                <input type="radio" name="employment_status" value="Retired" required> Retired
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>How many hours do you spend on social media daily? </p>
+            <label>
+                <input type="radio" name="daily_social_media_hours" value="Less than 1hr" required> Less than 1 Hour
+            </label><br>
+            <label>
+                <input type="radio" name="daily_social_media_hours" value="1-2hrs" required> 1-2 Hours
+            </label><br>
+            <label>
+                <input type="radio" name="daily_social_media_hours" value="3-4hrs" required> 3-4 Hours
+            </label><br>
+            <label>
+                <input type="radio" name="daily_social_media_hours" value="5+ hrs" required> 5+ Hours
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>Have you ever purchased a product after seeing it on social media?</p>
+            <label>
+                <input type="radio" name="purchased_due_to_social_media" value="Yes" required> Yes
+            </label><br>
+            <label>
+                <input type="radio" name="purchased_due_to_social_media" value="No" required> No
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>How often do you buy impulsively due to social media?</p>
+            <label>
+                <input type="radio" name="impulse_buying_frequency" value="Sometimes" required> Sometimes
+            </label><br>
+            <label>
+                <input type="radio" name="impulse_buying_frequency" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="impulse_buying_frequency" value="Never" required> Never
+            </label><br>
+            <label>
+                <input type="radio" name="impulse_buying_frequency" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="impulse_buying_frequency" value="Very Often" required> Very Often
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>What’s your average monthly spending on social media-influenced purchases?</p>
+            <label>
+                <input type="radio" name="monthly_spending_social_media" value="Less than ₹500" required> Less than ₹500
+            </label><br>
+            <label>
+                <input type="radio" name="monthly_spending_social_media" value="₹500 - ₹2,000" required> ₹500 - ₹2,000
+            </label><br>
+            <label>
+                <input type="radio" name="monthly_spending_social_media" value="₹2,000 - ₹5,000" required> ₹2,000 - ₹5,000
+            </label><br>
+            <label>
+                <input type="radio" name="monthly_spending_social_media" value="₹5,000 - ₹10,000" required> ₹5,000 - ₹10,000
+            </label><br>
+            <label>
+                <input type="radio" name="monthly_spending_social_media" value="More than ₹10,000" required> More than ₹10,000
+            </label><br>
+            <label>
+                <input type="radio" name="monthly_spending_social_media" value="None of the Above" required> None of the Above
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>Do limited-time offers make you buy faster?</p>
+            <label>
+                <input type="radio" name="influenced_by_limited_offers" value="Yes" required> Yes
+            </label><br>
+            <label>
+                <input type="radio" name="influenced_by_limited_offers" value="No" required> No
+            </label>
+        </div>
+        
+        
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+
+    
+
+</body>
+</html>

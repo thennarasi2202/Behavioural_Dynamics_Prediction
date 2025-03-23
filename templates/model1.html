@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Impact Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h2 class="text-center">Social Media Impact Prediction</h2>
+    <form action="/model1" method="POST" class="mt-4">
+        <div class="mb-3">
+            <p>What is your Settlement type?</p>
+            <label>
+                <input type="radio" name="Settlement" value="Rural" required> Rural
+            </label><br>
+            <label>
+                <input type="radio" name="Settlement" value="Urban" required> Urban
+            </label>
+        </div>
+        
+        <div class="mb-3">
+            <p>What is your Age?</p>
+            <label>
+                <input type="radio" name="Age" value="below 18" required> 18 or Below
+            </label><br>
+            <label>
+                <input type="radio" name="Age" value="18-22" required> 18-22
+            </label><br>
+            <label>
+                <input type="radio" name="Age" value="23-25" required> 23-25
+            </label><br>
+            <label>
+                <input type="radio" name="Age" value="26-28" required> 26-28
+            </label><br>
+            <label>
+                <input type="radio" name="Age" value="Above 28" required> Above 28
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>In a day, how much time do you spend on social media platforms?</p>
+            <label>
+                <input type="radio" name="Social_media_time_in_hours" value="<1" required> Less than One Hour
+            </label><br>
+            <label>
+                <input type="radio" name="Social_media_time_in_hours" value="1 to 2" required> Between 1 to 2 Hours
+            </label><br>
+            <label>
+                <input type="radio" name="Social_media_time_in_hours" value="2 to 3" required> Between 2 to 3 Hours
+            </label><br>
+            <label>
+                <input type="radio" name="Social_media_time_in_hours" value=">3" required> More than 3 Hours
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>Highest level of eduaction attained</p>
+            <label>
+                <input type="radio" name="Education" value="10th grade" required> 10th grade
+            </label><br>
+            <label>
+                <input type="radio" name="Education" value="12th grade" required> 12th grade
+            </label><br>
+            <label>
+                <input type="radio" name="Education" value="Diploma" required> Diploma
+            </label><br>
+            <label>
+                <input type="radio" name="Education" value="Bachelor's Degree" required> Bachelor's Degree
+            </label><br>
+            <label>
+                <input type="radio" name="Education" value="Master's Degree" required> Master's Degree
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>When did you start using social media actively?</p>
+            <label>
+                <input type="radio" name="New_vs_Old_user" value="4 years ago or higher" required> 4 years ago or higher
+            </label><br>
+            <label>
+                <input type="radio" name="New_vs_Old_user" value="3 years ago" required> 3 years ago
+            </label><br>
+            <label>
+                <input type="radio" name="New_vs_Old_user" value="2 years ago" required> 2 years ago
+            </label><br>
+            <label>
+                <input type="radio" name="New_vs_Old_user" value="less than a year ago" required> Less than a year ago
+            </label>
+        </div>
+        
+        
+        <div class="mb-3">
+            <p>How often do you find that you stay online longer than you intended?</p>
+            <label>
+                <input type="radio" name="extended_use" value="Not Applicable" required> Not Applicable
+            </label><br>
+            <label>
+                <input type="radio" name="extended_use" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="extended_use" value="Occasionally" required> Occasionally
+            </label><br>
+            <label>
+                <input type="radio" name="extended_use" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="extended_use" value="Frequently" required> Frequently
+            </label><br>
+            <label>
+                <input type="radio" name="extended_use" value="Always" required> Always
+            </label>
+        </div>
+        
+
+        <div class="mb-3">
+            <p>How often do your grades or school work suffer because of the amount of time you spend online?</p>
+            <label>
+                <input type="radio" name="academic_lag" value="Not Applicable" required> Not Applicable
+            </label><br>
+            <label>
+                <input type="radio" name="academic_lag" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="academic_lag" value="Occasionally" required> Occasionally
+            </label><br>
+            <label>
+                <input type="radio" name="academic_lag" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="academic_lag" value="Frequently" required> Frequently
+            </label><br>
+            <label>
+                <input type="radio" name="academic_lag" value="Always" required> Always
+            </label>
+        </div>
+        
+
+        <div class="mb-3">
+            <p>How often does your job performance or productivity suffer because of the social media?</p>
+            <label>
+                <input type="radio" name="job_performance" value="Not Applicable" required> Not Applicable
+            </label><br>
+            <label>
+                <input type="radio" name="job_performance" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="job_performance" value="Occasionally" required> Occasionally
+            </label><br>
+            <label>
+                <input type="radio" name="job_performance" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="job_performance" value="Frequently" required> Frequently
+            </label><br>
+            <label>
+                <input type="radio" name="job_performance" value="Always" required> Always
+            </label>
+        </div>
+        
+
+        <div class="mb-3">
+            <p>How often do you check your social media account before something else that you need to do?</p>
+            <label>
+                <input type="radio" name="often_checking" value="Not Applicable" required> Not Applicable
+            </label><br>
+            <label>
+                <input type="radio" name="often_checking" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="often_checking" value="Occasionally" required> Occasionally
+            </label><br>
+            <label>
+                <input type="radio" name="often_checking" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="often_checking" value="Frequently" required> Frequently
+            </label><br>
+            <label>
+                <input type="radio" name="often_checking" value="Always" required> Always
+            </label>
+        </div>
+        
+
+        <div class="mb-3">
+            <p>How often do you lose sleep due to being online?</p>
+            <label>
+                <input type="radio" name="lack_of_sleep" value="Not Applicable" required> Not Applicable
+            </label><br>
+            <label>
+                <input type="radio" name="lack_of_sleep" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="lack_of_sleep" value="Occasionally" required> Occasionally
+            </label><br>
+            <label>
+                <input type="radio" name="lack_of_sleep" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="lack_of_sleep" value="Frequently" required> Frequently
+            </label><br>
+            <label>
+                <input type="radio" name="lack_of_sleep" value="Always" required> Always
+            </label>
+        </div>
+        
+
+        <div class="mb-3">
+            <p>How often do you try to cut down the amount of time you spend online and fail?</p>
+            <label>
+                <input type="radio" name="internet_control_fail" value="Not Applicable" required> Not Applicable
+            </label><br>
+            <label>
+                <input type="radio" name="internet_control_fail" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="internet_control_fail" value="Occasionally" required> Occasionally
+            </label><br>
+            <label>
+                <input type="radio" name="internet_control_fail" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="internet_control_fail" value="Frequently" required> Frequently
+            </label><br>
+            <label>
+                <input type="radio" name="internet_control_fail" value="Always" required> Always
+            </label>
+        </div>
+        
+
+        <div class="mb-3">
+            <p>How often do you feel depressed, moody, or nervous when you are off-line, which goes away once you are back online?</p>
+            <label>
+                <input type="radio" name="mood_offline" value="Not Applicable" required> Not Applicable
+            </label><br>
+            <label>
+                <input type="radio" name="mood_offline" value="Rarely" required> Rarely
+            </label><br>
+            <label>
+                <input type="radio" name="mood_offline" value="Occasionally" required> Occasionally
+            </label><br>
+            <label>
+                <input type="radio" name="mood_offline" value="Often" required> Often
+            </label><br>
+            <label>
+                <input type="radio" name="mood_offline" value="Frequently" required> Frequently
+            </label><br>
+            <label>
+                <input type="radio" name="mood_offline" value="Always" required> Always
+            </label>
+        </div>
+        
+        
+        
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+
+    
+
+</body>
+</html>
