@@ -1,0 +1,41 @@
+Human Behavioral Changes Due to Social Media Trends
+
+Project Overview
+
+This project explores how social media trends influence human behavior, focusing on two key aspects:
+
+Social Media Addiction Prediction – Analyzing user engagement and behavioral patterns to determine addiction levels.
+Impulsive Buying Behavior Prediction – Assessing how social media influences purchasing decisions, particularly impulsive buying.
+
+Objective
+The goal is to develop machine learning models that can predict:
+Addiction levels to social media (Low, Moderate, High)
+Impulsive buying behavior (Not Addicted, Addicted)
+These predictions provide insights into how social media affects different age groups and offer suggestions for healthier digital habits.
+
+Dataset
+The dataset consists of user responses on social media usage, engagement levels, and shopping behavior. Features include:
+Time spent on social media
+Emotional impact of being offline
+Influence of social media ads
+Purchasing decisions based on social media trends
+
+Machine Learning Models
+Model 1: Social Media Addiction Prediction
+Classification Model (0: Low, 1: Moderate, 2: High)
+Features: Screen time, mood changes, internet control, etc.
+Output: Personalized suggestions based on addiction level
+Model 2: Impulsive Buying Behavior Prediction
+Binary Classification (0: Not Addicted, 1: Addicted)
+Features: Purchase frequency, influence of limited-time offers, monthly spending, etc.
+Output: Recommendations to control impulsive buying
+
+Technology Stack
+Backend: Python, Flask
+Machine Learning: Scikit-learn, Pandas, Joblib
+Frontend: HTML, CSS
+
+Future Improvements
+Enhancing dataset size and diversity
+Implementing deep learning models for improved accuracy
+Adding interactive visualizations
