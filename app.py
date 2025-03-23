@@ -10,7 +10,7 @@ rf_model = joblib.load("xgb_classifier.joblib")  # Model 1
 impulse_model = joblib.load("impulse_buying_model.joblib")  # Model 2
 
 # Load transformers
-rf_transformer = joblib.load(r'C:\Users\thenn\Desktop\MLProject\ct_transformer')  # For Model 1
+rf_transformer = joblib.load(r'C:\Users\thenn\Desktop\MLProject\MLproject\ct_transformer')  # For Model 1
 impulse_transformer = joblib.load("transformer.joblib")  # For Model 2
 
 @app.route('/')
