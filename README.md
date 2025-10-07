@@ -9,16 +9,12 @@ Internet addiction: [Kaggle dataset](https://www.kaggle.com/datasets/apoorva1225
 Shopping Behaviour: [Google Drive Link](https://docs.google.com/spreadsheets/d/1j18VKrb7REEodmfxH2ViELJjplRd-4Mp/edit?usp=sharing&ouid=114123281321181342880&rtpof=true&sd=true)
 
 ## Sample Features
-Internet Addiction
+Internet Addiction & Shopping Behaviour
   - Age
   - Job/School Performance
   - Sleep patterns
   - Time spent online
   - Mood offline
-Shopping Behaviour
-  - Age
-  - Employment Status
-  - Time spent on social media
   - Average amount spent on shopping per month
   - Purchase Influence
   - Frequency of online shopping
