@@ -8,7 +8,7 @@ This project has 2 working machine learning models which predicts:
 Internet addiction: [Kaggle dataset](https://www.kaggle.com/datasets/apoorva1225/social-media-influence)
 Shopping Behaviour: [Google Drive Link](https://docs.google.com/spreadsheets/d/1j18VKrb7REEodmfxH2ViELJjplRd-4Mp/edit?usp=sharing&ouid=114123281321181342880&rtpof=true&sd=true)
 
-#Sample Features
+## Sample Features
 Internet Addiction
   - Age
   - Job/School Performance
